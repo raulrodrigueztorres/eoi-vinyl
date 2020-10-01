@@ -1,7 +1,7 @@
 {
 	"name": "disc",
 	"version": "1.0.0",
-	"description": "",
+	"description": "Design of a vinyl with a simple animation",
 	"main": "index.js",
 	"scripts": {
 		"start": "parcel serve src/index.html --port 8000",
@@ -14,7 +14,7 @@
 		"checkFormat": "npx prettier --check src/*.html src/**/*.css src/**/*.js"
 	},
 	"keywords": [],
-	"author": "",
+	"author": "Raúl Rodríguez Torres",
 	"license": "ISC",
 	"devDependencies": {
 		"eslint": "^7.10.0",
