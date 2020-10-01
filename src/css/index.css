@@ -1,0 +1,89 @@
+body {
+	margin: 0;
+}
+
+.container {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	z-index: -2;
+	background: linear-gradient(#f4e1a9, transparent, #f4e1a9);
+}
+
+.flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.item {
+	width: 45vh;
+}
+
+.cover {
+	width: 22vh;
+	height: 22vh;
+	background-image: url('../assets/covers/jealous.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.openClose {
+	position: relative;
+	z-index: -1;
+	width: 20vh;
+	height: 20vh;
+	transform: translateX(-21vh);
+	transition: transform 0.5s;
+}
+
+.vinyl {
+	width: 20vh;
+	height: 20vh;
+	background: repeating-radial-gradient(
+		black,
+		black 12px,
+		#696865 13px,
+		black 14px
+	);
+	border-radius: 50%;
+	z-index: -1;
+	animation: rotation 4s linear infinite;
+	animation-play-state: paused;
+}
+
+@keyframes rotation {
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.open {
+	transform: translateX(-10vh);
+}
+
+.label {
+	background-image: url(../assets/covers/jealous.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 7vh;
+	height: 7vh;
+	border-radius: 50%;
+}
+
+.hole {
+	height: 0.5vh;
+	width: 0.5vh;
+	background: white;
+	margin: auto;
+	border-radius: 50%;
+	border-style: solid;
+	border-width: 2px;
+	border-color: black;
+}
